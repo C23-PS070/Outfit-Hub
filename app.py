@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 
-storage_client = storage.Client.from_service_account_json('project-capstone-386905-7b27a6757178.json')
+storage_client = storage.Client.from_service_account_json('project-capstone.json')
 bucket_name = 'upload_outfithub'
 
 @app.route('/', methods=["GET"])
